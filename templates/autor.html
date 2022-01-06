@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{%block contenido%}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+<section class="hero is-primary is-fullheight">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- formato del formulario  -->
+        <form action="/registrarAutor" method="post" class="box">
+            <div class="field">
+                <label for="" class="label">Nombre del Autor</label>
+                <div class="control has-icons-left">
+                  <input type="text" name="nombre_autor" placeholder="" class="input" required>
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                    <label for="" class="label">Fecha de nacimiento</label>
+                    <div class="control has-icons-left">
+                      <input type="date" name="fecha_nac" placeholder="" class="input" required>
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-envelope"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="field">
+                        <label for="" class="label">Nacionalidad</label>
+                        <div class="control has-icons-left">
+                          <input type="text" name="nacionalidad" placeholder="" class="input" required>
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                          </div>
+                        </div> <div class="field">
+               <button class="button is success"> 
+                 Registrar
+                </div>
+{%endblock%}

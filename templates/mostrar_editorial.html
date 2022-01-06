@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{%block contenido2%}
+<h>Lista de Editoriales</h>
+<table>
+  {% for editorial in consulta %}
+  <tr>
+    <td>{{editorial.nombre_editorial}}</td>
+    <td><a href="/eliminareditorial/{{editorial.id_editorial}}">Eliminar</a></td>
+    <td><a href="/editareditorial/{{editorial.id_editorial}}">Editar</a></td>
+  </tr>
+  {% endfor %}
+</table>
+<button><a href="/editorial">Registra Editorial</a></button>
+{%endblock%}

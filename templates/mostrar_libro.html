@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{%block contenido2%}
+<h>Lista de Libros</h>
+<table border="1" style="border-collapse: collapse;">
+  
+  <thead>
+    <tr>
+      <td>Nombre libro</td>
+      <td>Paginas</td>
+      <td>Formato</td>
+      <td>Volumen</td>
+      <td>Genero</td>
+      <td>Autor</td>
+      <td>Editorial</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for libro in consulta %}
+    <tr>
+      <td>{{libro.titulo_libro}}</td>
+      <td>{{libro.numero_paginas}}</td>
+      <td>{{libro.formato}}</td>
+      <td>{{libro.volumen}}</td>
+      <td>{{libro.tipo_genero}}</td>
+      <td>{{libro.nombre_autor}}</td>
+      <td>{{libro.nombre_editorial}}</td>
+      <td><a href="/eliminarlibro/{{libro.id_libro}}">Eliminar</a></td>
+      <td><a href="/editarLibro/{{libro.id_libro}}">Editar</a></td>
+      <td><a href="/misFavoritos/{{libro.id_libro}}">Agregar</a></td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+<button><a href="/libro">Registrar libro</a></button>
+{%endblock%}

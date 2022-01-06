@@ -1,0 +1,17 @@
+{%block contenido%}
+
+<section class="hero is-primary is-fullheight">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- formato del formulario  -->
+        <form action="/registroFavorito" method="post" class="box">
+            <div class="field">
+            <label for="" class="label">Libro</label>
+                    <input type="hidden" name="id_libro" value={{libro.id_libro}}>
+                    <input type="hidden" name="id_usuario" value={{usuario.id_usuario}}>
+                    <input type="text" name="titulo_libro" value={{libro.titulo_libro}}>
+            </div>
+               <button class="button is success"> 
+                 Registrar
+             </div>
+{%endblock%}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{%block contenido%}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
+<h1>Modificar Autor </h1>
+<section class="hero is-primary is-fullheight">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- formato del formulario  -->
+        <form action="/modificarautor" method="post" class="box">
+            <div class="field">
+                <label for="" class="label">Nombre del Autor</label>
+                <div class="control has-icons-left">
+                  <input type="text" name="nombre_autor" placeholder="" class="input" required value ={{autor.nombre_autor}}>
+                  <label for="" class="label">Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nac" placeholder="" class="input" required value={{autor.fecha_nac}}>
+                        <label for="" class="label">Nacionalidad</label>
+                        <input type="text" name="nacionalidad" placeholder="" class="input" required value={{autor.nacionalidad}}>
+                    <input type="hidden" name="id_autor" value={{autor.id_autor}}>
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                    <button class="button is success"> 
+                      Guardar
+                  </div>
+{%endblock%}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block encabezado %}
+{% endblock %}
+
+{% block contenido%}
+  <section class="con">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- formato del formulario  -->
+        <form action="/login" method="post" class="box">
+          <center>
+          <div class="field">
+          <label for="" class="label">Correo</label>
+          <div class="control has-icons-left">
+            <input type="email" name="email" placeholder="isaias711939@gmail.com" class="input" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+        </center>
+        <center>
+          <div class="=field">
+            <label for="" class="label">Contrasena</label>
+            <div class="control has-icons-left">
+              <input type="password" name="password" placeholder="**************" class="input" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+          </div>
+        </center>
+        <center>
+           <div class="field">
+             <a href="/registro">Crear cuenta click aqui</a>
+             </div>
+            </center>
+             <center>
+             <div class="field">
+               <button class="button is success"> 
+                 Ingresar
+             </div>
+            </center>
+        </form>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

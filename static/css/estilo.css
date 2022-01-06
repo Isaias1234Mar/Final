@@ -1,0 +1,22 @@
+body {
+    background:lightgreen;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.2em;
+    color: black;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.2em;
+    color:brown;
+   
+}
+
+h2{
+    border-bottom: 1px solid black;
+}

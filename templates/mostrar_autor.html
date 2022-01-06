@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+{%block contenido2%}
+<h>Lista de Autores</h>
+<table>
+  {% for autor in consulta %}
+  <tr>
+    <td>{{autor.nombre_autor}}</td>
+    <td>{{autor.fecha_nac}}</td>
+    <td>{{autor.nacionalidad}}</td>
+    <td><a href="/eliminarAutor/{{autor.id_autor}}">Eliminar</a></td>
+    <td><a href="/editarAutor/{{autor.id_autor}}">Editar</a></td>
+  </tr>
+  {% endfor %}
+</table>
+<button><a href="/autor">Registrar autor</a></button>
+{%endblock%}

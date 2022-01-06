@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{%block contenido2%}
+<h>Lista de Generos</h>
+<table>
+  {% for genero in consulta %}
+  <tr>
+    <td>{{genero.tipo_genero}}</td>
+    <td><a href="/eliminargenero/{{genero.id_genero}}">Eliminar</a></td>
+    <td><a href="/editargenero/{{genero.id_genero}}">Editar</a></td>
+  </tr>
+  {% endfor %}
+</table>
+<button><a href="/genero">Registar Genero</a></button>
+{%endblock%}

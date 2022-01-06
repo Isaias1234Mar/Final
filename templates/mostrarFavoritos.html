@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
+
+{% block contenido %}
+<h>Lista de Favoritos</h>
+<table>
+  {% for misfavoritos in consulta %}
+  <tr>
+    <td>{{misfavoritos.titulo_libro}}</td>
+    <td><a href="/eliminarFavorito/{{misfavoritos.id_libro}}">Eliminar</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

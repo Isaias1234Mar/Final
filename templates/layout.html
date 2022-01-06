@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  
+  <link rel= "stylesheet" href="static\estilo.css">
+<head>
+  <meta charset="utf-8">
+  <title>Pagina Principal</title>
+</head>
+
+<body>
+{% block encabezado %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel= "stylesheet" href="static\estilo.css">
+    <script src="https://kit.fontawesome.com/75a158de5f.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a class="nav-link" href="/leerlibros">
+          <span class="icon"><i class="fas fa-book"></i></span>
+          <span>Libro</span></a>
+        
+        <a class="nav-link" href="/leerAutores">
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <span >Autor</span></a>
+        
+        <a class="nav-link" href="/leerEditoriales">
+          <span class="icon"><i class="fas fa-bookmark"></i></span>
+          <span>Editorial</span></a>
+        
+        <a  class="nav-link"  href="/leerGenero">
+          <span class="icon"><i class="fas fa-cat"></i> </span>
+          <span>Genero</span></a>
+        
+        <a class="nav-link" href="/missFavoritos">
+          <span class="icon"><i class="fas fa-star"></i></span>
+          <span>Mis Favoritos</span></a>
+      </ul>
+    </nav>
+  </body>
+</html>
+{% endblock %}
+
+{% block contenido%}
+{% endblock %}
+
+{% block contenido2%}
+{% endblock %}
+
+
+<!--  
+    {% block footer %}
+
+    <a1> &copy; Copryight 2021 por Isaias Martinez  Mendoza   </a1>
+      
+    {% endblock %} -->
+ 
+
+</body>
+</html>
